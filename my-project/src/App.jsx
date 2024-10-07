@@ -1,0 +1,22 @@
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Home.jsx';
+import Allprojects from "./Allprojects.jsx";
+
+export default function App() {
+    useEffect(() => {
+        document.title = "Souleymane Diallo - Portfolio";
+    }, []);
+
+    return (
+        <div style={{backgroundColor:'#171717'}} className={'text-white'}>
+
+            <Router >
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                </Routes>
+
+            </Router>
+        </div>
+    );
+}
