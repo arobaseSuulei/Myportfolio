@@ -11,7 +11,7 @@ export default function Header() {
                 <span className={'flex items-center flex-col gap-2'}>
                     <nav className={'flex items-center gap-2'}>
                         <img className={' w-14 h-auto'} src={'https://avatar.iran.liara.run/public/33'}/>
-                        <p>Souleymane Diallo</p>
+                        <p>Souley Diallo</p>
 
                     </nav>
                     <nav className={'flex items-center gap-2'}>
