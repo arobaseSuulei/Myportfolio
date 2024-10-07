@@ -30,7 +30,7 @@ export default function Header() {
                         <img src={'../public/twitter.png'} className={'rounded-lg w-10 h-auto'}/>
                     </a>
                     <a target={'_blank'} href={''}>
-                        <img src={'../public/linkedin.png'} className={'rounded-lg w-10 h-auto'}/>
+                        <img src={'https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg'} className={'rounded-lg w-10 h-auto'}/>
                     </a>
                     <a target={'_blank'} href={'https://github.com/arobaseSuulei'}>
                         <img src={'../public/github.png'} className={'rounded-lg w-10 h-auto'}/>
