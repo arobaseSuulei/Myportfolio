@@ -11,7 +11,7 @@ export default function Header() {
                 <span className={'flex items-center flex-col gap-2'}>
                     <nav className={'flex items-center gap-2'}>
                         <img className={' w-14 h-auto'} src={'https://avatar.iran.liara.run/public/33'}/>
-                        <p>Souley Diallo</p>
+                        <p>Souleymane Diallo</p>
 
                     </nav>
                     <nav className={'flex items-center gap-2'}>
@@ -27,13 +27,13 @@ export default function Header() {
                 <span className={'flex items-center gap-2'}>
 
                     <a target={'_blank'} href={'https://x.com/4ssulei'}>
-                        <img src={'../public/twitter.png'} className={'rounded-lg w-10 h-auto'}/>
+                        <img src={'https://img.freepik.com/vecteurs-libre/nouvelle-conception-icone-x-du-logo-twitter-2023_1017-45418.jpg?size=626&ext=jpg'} className={'rounded-lg w-10 h-auto'}/>
                     </a>
                     <a target={'_blank'} href={''}>
                         <img src={'https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg'} className={'rounded-lg w-10 h-auto'}/>
                     </a>
                     <a target={'_blank'} href={'https://github.com/arobaseSuulei'}>
-                        <img src={'../public/github.png'} className={'rounded-lg w-10 h-auto'}/>
+                        <img src={'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png'} className={'rounded-lg w-10 h-auto'}/>
                     </a>
 
 
