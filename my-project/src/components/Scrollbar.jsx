@@ -18,7 +18,12 @@ export default function Scrollbar() {
                     <img src={'https://nextjs.org/icons/react.svg'} className={'w-20'}/>
                 </p>
                 <p>
-                    <img src={'https://seeklogo.com/images/G/git-logo-A1D01DDA30-seeklogo.com.png'} className={'w-24'}/>
+                    <img src={'https://seeklogo.com/images/G/git-logo-A1D01DDA30-seeklogo.com.png'} className={'w-20'}/>
+                </p>
+
+
+                <p>
+                    <img src="https://img.logo.dev/supabase.com?token=pk_QyZYYVI6QBejCt9wU_0qdw"  className={'w-24 rounded-full'}/>
                 </p>
 
 

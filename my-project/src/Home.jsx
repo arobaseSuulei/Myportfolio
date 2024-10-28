@@ -6,6 +6,7 @@ import Projects from "./components/Projects.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Content from "./components/Content.jsx";
 import Scrollbar from "./components/Scrollbar.jsx";
+import ProjectSection from "./components/ProjectSection.jsx";
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
             <Navbar/>
             <Content/>
             <Scrollbar/>
+            <ProjectSection/>
 
 
 
