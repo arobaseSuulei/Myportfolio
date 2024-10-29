@@ -2,8 +2,8 @@ import React from 'react';
 import '../App.css'
 export default function Scrollbar() {
     return (
-        <div  className='overflow-x-hidden rounded-full  mx-4 sm:mx-14 md:mx-20 lg:mx-80  mt-6'>
-            <div className="flex items-center  gap-14 animate-scroll py-14 w-full ">
+        <div  className='overflow-x-hidden   mx-4 sm:mx-14 md:mx-20 lg:mx-80  mt-6'>
+            <div className="flex items-center  gap-4 animate-scroll py-14 w-full ">
 
 
                 <p>
@@ -20,10 +20,9 @@ export default function Scrollbar() {
                 <p>
                     <img src={'https://seeklogo.com/images/G/git-logo-A1D01DDA30-seeklogo.com.png'} className={'w-20'}/>
                 </p>
-
-
                 <p>
-                    <img src="https://img.logo.dev/supabase.com?token=pk_QyZYYVI6QBejCt9wU_0qdw"  className={'w-24 rounded-full'}/>
+                    <img src="https://img.logo.dev/supabase.com?token=pk_QyZYYVI6QBejCt9wU_0qdw"
+                         className={'w-20 rounded-full'}/>
                 </p>
 
 
