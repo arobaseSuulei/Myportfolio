@@ -6,10 +6,10 @@ export default function Content(){
     return(
         <div className={' sm:mx-32'}>
             <div className={'flex flex-col items-center justify-center gap-14 mt-16'} >
-                <h1 className={'flex items-center font-semibold rounded-full p-4 bg-white text-black shadow-[0_0_15px_rgba(255,255,255)]'}>
-                    <p>Hello, I am souleymane👋</p>
+                <a href={''} className={'flex items-center font-semibold rounded-full p-4 bg-white text-black shadow-[0_0_15px_rgba(255,255,255)]'}>
+                    <p >Hello, I am souleymane👋</p>
 
-                </h1>
+                </a>
 
 
                 <nav className={'flex flex-col items-center justify-center  gap-6'} >

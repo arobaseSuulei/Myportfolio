@@ -7,7 +7,8 @@ export default function Navbar() {
         <div>
             <div className={'w-full flex flex-wrap justify-between items-center py-16 sm:px-14 px-2'}>
                 <nav className={'flex items-center text-xs gap-1 '}>
-                    <a href={'mailto:slimanediallo2105@gmail.com'} className={'flex items-center bg-white text-black gap-2 border rounded-full p-4'}>
+                    <a href={'mailto:slimanediallo2105@gmail.com'}
+                       className={'flex items-center bg-white text-black gap-2 border rounded-full p-4'}>
                         <p className={'sm:block hidden '}> Send an email</p>
                         <p className={'sm:hidden block'}>email</p>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -18,7 +19,13 @@ export default function Navbar() {
                         </svg>
 
                     </a>
-                    <a target={'_blank'} href={'https://drive.google.com/file/d/1OlZScmxTYkx_3Tw9UhpgVN4of5UwZGzI/view?usp=sharing'} className={'flex items-center gap-2 border rounded-full p-4 px-6'}>
+
+
+
+
+                    <a target={'_blank'}
+                       href={'https://drive.google.com/file/d/1OlZScmxTYkx_3Tw9UhpgVN4of5UwZGzI/view?usp=sharing'}
+                       className={'flex items-center gap-2 border rounded-full p-4 px-6'}>
                         <p> CV </p>
 
 
@@ -27,7 +34,8 @@ export default function Navbar() {
                 <nav className={'flex items-center text-xs gap-2 '}>
 
 
-                    <a href={'https://www.linkedin.com/in/souleymane-diallo-2b13a02b9/'} className={'hidden sm:block pr-4 border-r '}>LinkedIn</a>
+                    <a href={'https://www.linkedin.com/in/souleymane-diallo-2b13a02b9/'}
+                       className={'hidden sm:block pr-4 border-r '}>LinkedIn</a>
                     <a href={'https://www.linkedin.com/in/souleymane-diallo-2b13a02b9/'} className={'sm:hidden p-2'}>
                         <img className={'w-8'}
                              src={'https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg'}/>
