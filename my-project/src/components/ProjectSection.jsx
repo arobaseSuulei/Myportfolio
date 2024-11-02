@@ -8,7 +8,7 @@ export default function ProjectSection(){
 
     const [projects, setProjects] = useState([
         {id:1,name:'Donelist',description:'To do app',technologies:'ReactJS - Tailwind css',link:'https://donelist-todo.vercel.app'},
-        {id:1,name:'FinanceMate',description:'finances personnelles',technologies:'ReactJS - Tailwind css - supabase',link:'https://finance-mate-app.vercel.app/'},
+        {id:1,name:'ChatGo',description:'Appli de chatting',technologies:'ReactJS - Tailwind css - supabase',link:'https://chatgo-realtime.vercel.app'},
         {id:2,name:'Portfolio',description:'portfolio',technologies:'ReactJS - Tailwind css',link:'https://souleyd-portfolio.vercel.app'}
 
     ]);
