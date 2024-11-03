@@ -24,7 +24,7 @@ export default function Navbar() {
 
 
                     <a target={'_blank'}
-                       href={'https://drive.google.com/file/d/1OlZScmxTYkx_3Tw9UhpgVN4of5UwZGzI/view?usp=sharing'}
+                       href={'https://drive.google.com/file/d/1XXiPlo3oJVYvFl2tBXph-1jPobbw4wR7/view?usp=sharing'}
                        className={'flex items-center gap-2 border rounded-full p-4 px-6'}>
                         <p> CV </p>
 
