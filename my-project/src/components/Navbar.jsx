@@ -23,6 +23,8 @@ export default function Navbar() {
 
 
 
+                    {/* Mon cv
+
                     <a target={'_blank'}
                        href={'https://drive.google.com/file/d/1XXiPlo3oJVYvFl2tBXph-1jPobbw4wR7/view?usp=sharing'}
                        className={'flex items-center gap-2 border rounded-full p-4 px-6'}>
@@ -30,6 +32,10 @@ export default function Navbar() {
 
 
                     </a>
+
+
+                    */}
+
                 </nav>
                 <nav className={'flex items-center text-xs gap-2 '}>
 
