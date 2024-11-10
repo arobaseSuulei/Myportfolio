@@ -5,7 +5,7 @@ import Allprojects from "./Allprojects.jsx";
 
 export default function App() {
     useEffect(() => {
-        document.title = "Souleymane Diallo - Portfolio";
+        document.title = "Souleymane - Portfolio";
     }, []);
 
     return (
