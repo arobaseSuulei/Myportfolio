@@ -9,7 +9,7 @@ export default function App() {
     }, []);
 
     return (
-        <div style={{backgroundColor:'#171717'}} className={'text-white'}>
+        <div  className={'text-white'}>
 
             <Router >
                 <Routes>

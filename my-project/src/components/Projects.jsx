@@ -1,82 +1,78 @@
-import React from 'react';
-import {useEffect,useState} from "react";
-import {Link} from "react-router-dom";
+import {useEffect, useState} from "react";
+import ProjectTodo from "./ProjectTodo.jsx";
 
 
 export default function Projects() {
     return(
-        <div>
-            <div className={'mt-12 flex flex-col gap-6  '}>
-                <h1>Projects</h1>
+        <div className={'flex flex-col p-4 gap-8'}>
+            <h1 className={'font-semibold flex items-center justify-center text-sm'}>
+                <p className={'bg-white text-black p-2 rounded-lg'}>Mes projets</p>
+            </h1>
 
-                <div className={'grid grid-cols-2 gap-2 '}>
+            <h1 className={'flex items-center font-semibold sm:text-4xl text-2xl justify-center'}>
+                Découvrir mes projets
+            </h1>
 
-
-                    <a target={'_blank'} href={'https://donelist-todo.vercel.app'}
-                       className={'border w-72 h-80 flex flex-col gap-2 p-4 '}>
-                        <a className={'flex justify-between'}>
-                            <p>To do app</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                 stroke="currentColor" className="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
-                            </svg>
+            <p className={'opacity-60 text-sm px-4 sm:px-24 text-center '}>
+                Au cours de ma formation, je consacre du temps à des projets me permettant ainsi de gagner en expertise et d' approfondir mes connaissances
+            </p>
 
 
+            <div className={' p-6 grid grid-cols-1  sm:grid-cols-2 gap-2'}>
+
+
+
+
+                <div className={'border border-gray-500 rounded-lg grid grid-cols-1 grid-rows-2   '}>
+                        {/*Video*/}
+                        <a target={'_blank'} href={'https://chatgo-realtime.vercel.app/'}>
+                            <video
+                                className=" rounded-lg shadow-lg w-full h-full"
+                                autoPlay
+                                muted
+                                loop
+                                src="https://pxyqknxfvimxdcmplbff.supabase.co/storage/v1/object/public/items/chatGo.mov">
+                                Votre navigateur ne supporte pas la balise vidéo.
+                            </video>
                         </a>
-                        <p className={'flex items-center w-64 h-64 p-4 justify-center'}>
-                            <img
-                                className={' object-cover rounded-lg '}
-                                src={'../public/todoapp.png'}
-                                alt="To do app"
-                            />
-                        </p>
-
-                        <p className={'flex items-center justify-center gap-4'}>
-                            <img src={'../public/react.svg'} className={'w-6 h-6'} alt="Treact logo"/>
-                            <img src={'../public/tailwind.svg'} className={'w-6 h-6'} alt="tailwind logo"/>
-                        </p>
 
 
-                    </a>
+                        {/*info*/}
 
+                        <nav className={'flex flex-col gap-2 py-2 px-2'}>
+                            <h1 className={'font-semibold '}>chatGO</h1>
+                            <p className={' text-xs'} >Novembre 2024</p>
+                            <p className={'opacity-60 text-xs'} >Application web de chat en temps réel ouvert à tous</p>
 
-                    <Link to={'/'}>
-                        <a target={'_blank'} href={''}
-                           className={'border w-72 h-80 flex flex-col gap-2 p-4 '}>
-                            <a className={'flex justify-between'}>
-                                <p>Portfolio</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                     stroke-width="1.5"
-                                     stroke="currentColor" className="size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
-                                </svg>
+                            <p className={'flex flex-wrap gap-2'}>
+                                <a className={'cursor-pointer hover:opacity-60  rounded-lg p-1 text-xs bg-zinc-700 text-white'}>React
+                                    js</a>
+                                <a className={'cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-zinc-700 text-white'}>Tailwind
+                                    css</a>
+                                <a className={'cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-zinc-700 text-white'}>Supabase</a>
 
-
-                            </a>
-                            <p className={'flex items-center w-64 h-64 p-4 justify-center'}>
-                                <img
-                                    className={' object-cover rounded-lg '}
-                                    src={'../public/portfolio.png'}
-                                    alt="portfolio"
-                                />
                             </p>
 
+                            <p>
+                                <a target={'_blank'} href={'https://github.com/arobaseSuulei/chatGO/'} className={'cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-white text-black'}>code
+                                    source</a>
+                                <a href={'https://chatgo-realtime.vercel.app/'} className={'ml-4 cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-white text-black'}>visitez</a>
 
-                            <p className={'flex items-center justify-center gap-4'}>
-                                <img src={'../public/react.svg'} className={'w-6 h-6'} alt="Treact logo"/>
-                                <img src={'../public/tailwind.svg'} className={'w-6 h-6'} alt="tailwind logo"/>
                             </p>
 
-
-                        </a>
-                    </Link>
-
-
+                        </nav>
+                    </div>
+                <div>
+                    <ProjectTodo/>
                 </div>
 
+
             </div>
+
+
+
+
+
         </div>
     );
 }

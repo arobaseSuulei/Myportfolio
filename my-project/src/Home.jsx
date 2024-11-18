@@ -9,19 +9,30 @@ import Scrollbar from "./components/Scrollbar.jsx";
 import ProjectSection from "./components/ProjectSection.jsx";
 import Footer from "./components/Footer.jsx";
 import About from "./components/About.jsx";
+import Skills from "./components/Skills.jsx";
+import Nav from "./components/Nav.jsx";
 
 
 
 
 export default function Home() {
     return(
-        <div style={{backgroundColor:'#121212'}}  className={'  flex flex-col min-h-screen  '}>
-            <Navbar/>
-            <Content/>
-            <Scrollbar/>
-            <ProjectSection/>
-
-            <Footer/>
+        <div style={{backgroundColor:'#121212'}}  className={'grid grid-cols-1 sm:mx-72 gap-4  min-h-screen  '}>
+            <div className={''}>
+                <Header/>
+            </div>
+            <div className={''}>
+                <Skills/>
+            </div>
+            <div className={''}>
+                <Projects/>
+            </div>
+            <div className={''}>
+                <Nav/>
+            </div>
+            <div className={''}>
+                <Footer/>
+            </div>
 
 
 

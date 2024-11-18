@@ -5,7 +5,7 @@ import React from "react";
 export default function Navbar() {
     return(
         <div>
-            <div className={'w-full flex flex-wrap justify-between items-center py-16 sm:px-14 px-2'}>
+            <div className={'w-full flex flex-wrap justify-between  items-center py-16 sm:px-14 px-2'}>
                 <nav className={'flex items-center text-xs gap-1 '}>
                     <a href={'mailto:slimanediallo2105@gmail.com'}
                        className={'flex items-center bg-white text-black gap-2 border rounded-full p-4'}>

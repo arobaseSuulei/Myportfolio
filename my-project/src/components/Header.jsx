@@ -1,45 +1,73 @@
 import React from 'react';
 import {useState, useEffect} from 'react'
 
+import '../App.css'
+
 
 
 export default function Header() {
     return(
-        <div>
-            <div className={'flex justify-between items-center gap-4'}>
+        <div className={' '}>
+            <div className={'flex flex-col flex-wrap gap-6 py-2 p-4'}>
+                <nav className={'grid grid-cols-2 gap-2'}>
 
-                <span className={'flex items-center flex-col gap-2'}>
-                    <nav className={'flex items-center gap-2'}>
-                        <img className={' w-14 h-auto'} src={'https://avatar.iran.liara.run/public/33'}/>
-                        <p>Souleymane Diallo</p>
+                        <h1 className={'font-semibold p-6 text-3xl sm:text-5xl'}>Hey, je suis souleymane</h1>
 
-                    </nav>
-                    <nav className={'flex items-center gap-2'}>
-                        <span className="relative flex h-2 w-2">
-                            <span
-                                className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                        </span>
-                        <p className={'text-xs'}>Looking for intership</p>
-                    </nav>
-                </span>
 
-                <span className={'flex items-center gap-2'}>
 
-                    <a target={'_blank'} href={'https://x.com/4ssulei'}>
-                        <img src={'https://img.freepik.com/vecteurs-libre/nouvelle-conception-icone-x-du-logo-twitter-2023_1017-45418.jpg?size=626&ext=jpg'} className={'rounded-lg w-10 h-auto'}/>
-                    </a>
-                    <a target={'_blank'} href={''}>
-                        <img src={'https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg'} className={'rounded-lg w-10 h-auto'}/>
-                    </a>
-                    <a target={'_blank'} href={'https://github.com/arobaseSuulei'}>
-                        <img src={'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png'} className={'rounded-lg w-10 h-auto'}/>
+                </nav>
+                <p className={' '}>Etudiant en informatique passionné par la programmation et les
+                    algorithmes</p>
+
+                <nav className={'flex gap-4'}>
+
+                    <a href={'mailto:slimanediallo2105@gmail.com'}
+                       className={'shadow-[0_0_15px_rgba(255,255,255)] flex items-center w-36 text-xs bg-white text-black gap-1 border rounded-full p-4'}>
+                        <p className={'sm:block hidden '}> Send an email</p>
+                        <p className={'sm:hidden block'}>email</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             className="size-4">
+                            <path fill-rule="evenodd"
+                                  d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+
                     </a>
 
+                    {/* Mon cv*/}
+
+                    <a target={'_blank'}
+                       href={'https://drive.google.com/file/d/1XXiPlo3oJVYvFl2tBXph-1jPobbw4wR7/view?usp=sharing'}
+                       className={'flex items-center gap-2 border rounded-full w-24 text-xs hover:bg-white hover:text-black hover:shadow-[0_0_15px_rgba(255,255,255)] transition ease-out p-4 px-6'}>
+                        <p> CV </p>
+
+
+                    </a>
 
 
 
-                </span>
+
+                </nav>
+
+
+
+
+                <nav className={'flex flex-col gap-6 mt-4'}>
+                    <h1 className={'font-semibold text-xl'}>A propos</h1>
+                    <p className={'opacity-60 text-sm '}>Etudiant en 3e année en cycle ingénieur informatique, je
+                        suis un passionné de la programmation
+                        dès mon plus jeune âge. Je suis en particulier attiré par le developpement d'applications web et
+                        l' intelligence artificielle, mais aussi ouvert à
+                        tous les secteurs du developpement informatique en général
+                    </p>
+                </nav>
+
+
+
+
+
+
+
 
 
             </div>
