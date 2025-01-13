@@ -2,6 +2,7 @@ import React from 'react';
 import {useState, useEffect} from 'react'
 
 import '../App.css'
+import {Avatar, Badge, Box,Text, Card, Em, Flex} from "@radix-ui/themes";
 
 
 
@@ -11,12 +12,19 @@ export default function Header() {
             <div className={'flex flex-col flex-wrap gap-6 py-2 p-4'}>
                 <nav className={'grid grid-cols-2 gap-2'}>
 
-                        <h1 className={'font-semibold p-6 text-3xl sm:text-5xl'}>Hey, je suis souleymane</h1>
 
+                    <p className={'flex flex-col gap-4'}>
+                        <h1 className={'font-semibold pt-6 text-3xl sm:text-5xl'}>Hey, je suis <Em>souleymane</Em></h1>
+                        <Flex gap="2">
+                            <Badge color="green">Recherche de stage</Badge>
+
+                        </Flex>
+
+                    </p>
 
 
                 </nav>
-                <p className={' '}>Etudiant en informatique passionné par la programmation et les
+                <p className={' '}> Etudiant en informatique passionné par la programmation et les
                     algorithmes</p>
 
                 <nav className={'flex gap-4'}>
@@ -61,6 +69,31 @@ export default function Header() {
                         tous les secteurs du developpement informatique en général
                     </p>
                 </nav>
+
+
+
+                <Box maxWidth="240px">
+                    <Card>
+                        <Flex gap="3" align="center">
+                            <Avatar
+                                color={"green"}
+                                size="3"
+                                // src="https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?&w=64&h=64&dpr=2&q=70&crop=focalpoint&fp-x=0.67&fp-y=0.5&fp-z=1.4&fit=crop"
+                                radius="full"
+                                fallback="S"
+                            />
+                            <Box>
+                                <Text as="div" size="2" weight="bold">
+                                    Souleymane Diallo
+                                </Text>
+                                <Text as="div" size="2" color="gray">
+                                    Etudiant en Informatique
+                                </Text>
+                            </Box>
+                        </Flex>
+                    </Card>
+                </Box>
+
 
 
 

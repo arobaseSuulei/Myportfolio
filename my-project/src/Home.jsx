@@ -11,31 +11,40 @@ import Footer from "./components/Footer.jsx";
 import About from "./components/About.jsx";
 import Skills from "./components/Skills.jsx";
 import Nav from "./components/Nav.jsx";
+import "@radix-ui/themes/styles.css";
+import {Badge, Flex, Theme} from "@radix-ui/themes";
+import Name from "./components/Name.jsx";
+
 
 
 
 
 export default function Home() {
     return(
-        <div style={{backgroundColor:'#121212'}}  className={'grid grid-cols-1 sm:mx-72 gap-4  min-h-screen  '}>
-            <div className={''}>
-                <Header/>
-            </div>
-            <div className={''}>
-                <Skills/>
-            </div>
-            <div className={''}>
-                <Projects/>
-            </div>
-            <div className={''}>
-                <Nav/>
-            </div>
-            <div className={''}>
-                <Footer/>
-            </div>
+        <Theme appearance={'dark'}>
+            <div  className={'grid grid-cols-1 sm:mx-72 gap-4  min-h-screen  '}>
+                <div
+                    className={''}>
+                    <Header/>
+                </div>
 
 
+                <div className={''}>
+                    <Skills/>
+                </div>
+                <div className={''}>
+                    <Projects/>
+                </div>
+                <div className={''}>
+                    <Nav/>
+                </div>
+                <div className={''}>
+                    <Footer/>
+                </div>
 
-        </div>
+
+            </div>
+
+        </Theme>
     );
 }
