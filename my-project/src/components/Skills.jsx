@@ -9,7 +9,7 @@ export default function Skills() {
             <h1 className={'font-semibold text-xl'}>Skills</h1>
 
             <nav className={'flex flex-wrap gap-2'}>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>React js</p>
+                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-black text-white'}>React js</p>
                 <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>Tailwind css</p>
                 <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>Supabase</p>
                 <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 px-4 text-xs bg-white text-black'}>C</p>

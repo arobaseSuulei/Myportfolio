@@ -21,8 +21,11 @@ import Name from "./components/Name.jsx";
 
 export default function Home() {
     return(
-        <Theme appearance={'dark'}>
-            <div  className={'grid grid-cols-1 sm:mx-72 gap-4  min-h-screen  '}>
+        <Theme appearance={'light'}>
+
+
+            <Navbar/>
+            <div className={'grid grid-cols-1 sm:mx-72 gap-4  min-h-screen  '}>
                 <div
                     className={''}>
                     <Header/>

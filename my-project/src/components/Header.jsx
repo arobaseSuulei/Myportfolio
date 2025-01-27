@@ -10,15 +10,12 @@ export default function Header() {
     return(
         <div className={' '}>
             <div className={'flex flex-col flex-wrap gap-6 py-2 p-4'}>
-                <nav className={'grid grid-cols-2 gap-2'}>
+                <nav className={' '}>
 
 
                     <p className={'flex flex-col gap-4'}>
-                        <h1 className={'font-semibold pt-6 text-3xl sm:text-5xl'}>Hey, je suis <Em>souleymane</Em></h1>
-                        <Flex gap="2">
-                            <Badge color="green">Recherche de stage</Badge>
+                        <h1 className={'font-semibold pt-6 text-3xl sm:text-5xl'}>Hi, je suis souleymane</h1>
 
-                        </Flex>
 
                     </p>
 
@@ -72,27 +69,7 @@ export default function Header() {
 
 
 
-                <Box maxWidth="240px">
-                    <Card>
-                        <Flex gap="3" align="center">
-                            <Avatar
-                                color={"green"}
-                                size="3"
-                                // src="https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?&w=64&h=64&dpr=2&q=70&crop=focalpoint&fp-x=0.67&fp-y=0.5&fp-z=1.4&fit=crop"
-                                radius="full"
-                                fallback="S"
-                            />
-                            <Box>
-                                <Text as="div" size="2" weight="bold">
-                                    Souleymane Diallo
-                                </Text>
-                                <Text as="div" size="2" color="gray">
-                                    Etudiant en Informatique
-                                </Text>
-                            </Box>
-                        </Flex>
-                    </Card>
-                </Box>
+
 
 
 

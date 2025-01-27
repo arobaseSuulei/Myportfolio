@@ -8,7 +8,7 @@ export default function ProjectTodo() {
 
 
 
-            <div className={'border border-gray-500 rounded-lg grid grid-cols-1 grid-rows-2  '}>
+            <div className={'border  rounded-lg grid grid-cols-1 grid-rows-2  '}>
                 {/*image*/}
                 <a target={'_blank'} href={'https://donelist-todo.vercel.app'}>
                     <img

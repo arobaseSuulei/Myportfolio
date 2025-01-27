@@ -6,7 +6,7 @@ export default function Projects() {
     return(
         <div className={'flex flex-col p-4 gap-8'}>
             <h1 className={'font-semibold flex items-center justify-center text-sm'}>
-                <p className={'bg-white text-black p-2 rounded-lg'}>Mes projets</p>
+                <p className={'bg-black text-white p-2 rounded-lg'}>Mes projets</p>
             </h1>
 
             <h1 className={'flex items-center font-semibold sm:text-4xl text-2xl justify-center'}>
@@ -23,7 +23,7 @@ export default function Projects() {
 
 
 
-                <div className={'border border-gray-500 rounded-lg grid grid-cols-1 grid-rows-2   '}>
+                <div className={'border rounded-lg grid grid-cols-1 grid-rows-2   '}>
                         {/*Video*/}
                         <a target={'_blank'} href={'https://chatgo-realtime.vercel.app/'}>
                             <video
