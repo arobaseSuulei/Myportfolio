@@ -1,5 +1,8 @@
 import {useEffect, useState} from "react";
 import ProjectTodo from "./ProjectTodo.jsx";
+import ProjectPortfolio from "./ProjectPortfolio.jsx";
+import ScrollRevealItem from "./ScrollRevealItem.jsx";
+import ProjectFood from "./ProjectFood.jsx";
 
 
 export default function Projects() {
@@ -21,56 +24,68 @@ export default function Projects() {
             <div className={' p-6 grid grid-cols-1  sm:grid-cols-2 gap-2'}>
 
 
-
-
                 <div className={'border rounded-lg grid grid-cols-1 grid-rows-2   '}>
-                        {/*Video*/}
-                        <a target={'_blank'} href={'https://chatgo-realtime.vercel.app/'}>
-                            <video
-                                className=" rounded-lg shadow-lg w-full h-full"
-                                autoPlay
-                                muted
-                                loop
-                                src="https://pxyqknxfvimxdcmplbff.supabase.co/storage/v1/object/public/items/chatGo.mov">
-                                Votre navigateur ne supporte pas la balise vidéo.
-                            </video>
-                        </a>
+                    {/*Video*/}
+                    <a target={'_blank'} href={'https://chatgo-realtime.vercel.app/'}>
+                        <video
+                            className=" rounded-lg shadow-lg w-full h-full"
+                            autoPlay
+                            muted
+                            loop
+                            src="https://pxyqknxfvimxdcmplbff.supabase.co/storage/v1/object/public/items/chatGo.mov">
+                            Votre navigateur ne supporte pas la balise vidéo.
+                        </video>
+                    </a>
 
 
-                        {/*info*/}
+                    {/*info*/}
 
-                        <nav className={'flex flex-col gap-2 py-2 px-2'}>
-                            <h1 className={'font-semibold '}>chatGO</h1>
-                            <p className={' text-xs'} >Novembre 2024</p>
-                            <p className={'opacity-60 text-xs'} >Application web de chat en temps réel ouvert à tous</p>
+                    <nav className={'flex flex-col gap-2 py-2 px-2'}>
+                        <h1 className={'font-semibold '}>chatGO</h1>
+                        <p className={' text-xs'}>Novembre 2024</p>
+                        <p className={'opacity-60 text-xs'}>Application web de chat en temps réel ouvert à tous</p>
 
-                            <p className={'flex flex-wrap gap-2'}>
-                                <a className={'cursor-pointer hover:opacity-60  rounded-lg p-1 text-xs bg-zinc-700 text-white'}>React
-                                    js</a>
-                                <a className={'cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-zinc-700 text-white'}>Tailwind
-                                    css</a>
-                                <a className={'cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-zinc-700 text-white'}>Supabase</a>
+                        <p className={'flex flex-wrap gap-2'}>
+                            <a className={'cursor-pointer hover:opacity-60  rounded-lg p-1 text-xs bg-zinc-700 text-white'}>React
+                                js</a>
+                            <a className={'cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-zinc-700 text-white'}>Tailwind
+                                css</a>
+                            <a className={'cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-zinc-700 text-white'}>Supabase</a>
 
-                            </p>
+                        </p>
 
-                            <p>
-                                <a target={'_blank'} href={'https://github.com/arobaseSuulei/chatGO/'} className={'cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-white text-black'}>code
-                                    source</a>
-                                <a href={'https://chatgo-realtime.vercel.app/'} className={'ml-4 cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-white text-black'}>visitez</a>
+                        <p>
+                            <a target={'_blank'} href={'https://github.com/arobaseSuulei/chatGO/'}
+                               className={'cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-white text-black'}>code
+                                source</a>
+                            <a href={'https://chatgo-realtime.vercel.app/'}
+                               className={'ml-4 cursor-pointer hover:opacity-60 rounded-lg p-1 text-xs bg-white text-black'}>visitez</a>
 
-                            </p>
+                        </p>
 
-                        </nav>
-                    </div>
+                    </nav>
+                </div>
+
+
                 <div>
                     <ProjectTodo/>
                 </div>
 
+                <ScrollRevealItem delay={0.6}>
+                    <div>
+                        <ProjectPortfolio/>
+                    </div>
+                </ScrollRevealItem>
+
+
+                <ScrollRevealItem delay={0.8}>
+                    <div>
+                        <ProjectFood/>
+                    </div>
+                </ScrollRevealItem>
+
 
             </div>
-
-
-
 
 
         </div>

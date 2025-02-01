@@ -15,7 +15,7 @@ import "@radix-ui/themes/styles.css";
 import { Badge, Flex, Theme } from "@radix-ui/themes";
 import Name from "./components/Academic.jsx";
 import ScrollRevealItem from "./components/ScrollRevealItem.jsx";
-import Academic from "./components/Academic.jsx"; // Importez le composant
+import Academic from "./components/Academic.jsx";
 
 export default function Home() {
     return (
