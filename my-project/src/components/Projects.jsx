@@ -67,12 +67,14 @@ export default function Projects() {
                 </div>
 
 
-                <div>
-                    <ProjectTodo/>
-                </div>
+                <ScrollRevealItem delay={0.5}>
+                    <div>
+                        <ProjectTodo/>
+                    </div>
+                </ScrollRevealItem>
 
                 <ScrollRevealItem delay={0.6}>
-                    <div>
+                <div>
                         <ProjectPortfolio/>
                     </div>
                 </ScrollRevealItem>

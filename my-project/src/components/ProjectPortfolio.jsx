@@ -9,15 +9,16 @@ export default function ProjectPortfolio() {
 
 
         <div className={'border  rounded-lg grid grid-cols-1 grid-rows-2  '}>
-            {/*image*/}
-            <a target={'_blank'} href={'https://souleyd-portfolio.vercel.app'}>
-                <img
-
-                    className=" rounded-lg shadow-lg w-full h-full "
-                    src="https://pxyqknxfvimxdcmplbff.supabase.co/storage/v1/object/public/items/SCR-20241118-blbm.jpeg"
-
-
-                />
+            {/*video*/}
+            <a target={'_blank'} href={'https://chatgo-realtime.vercel.app/'}>
+                <video
+                    className=" rounded-lg shadow-lg w-full h-full"
+                    autoPlay
+                    muted
+                    loop
+                    src="https://pxyqknxfvimxdcmplbff.supabase.co/storage/v1/object/public/items//portfolio.mp4">
+                    Votre navigateur ne supporte pas la balise vidéo.
+                </video>
             </a>
 
 

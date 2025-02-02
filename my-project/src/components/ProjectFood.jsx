@@ -10,10 +10,10 @@ export default function ProjectFood() {
 
         <div className={'border  rounded-lg grid grid-cols-1 grid-rows-2  '}>
             {/*image*/}
-            <a target={'_blank'} href={'https://donelist-todo.vercel.app'}>
+            <a target={'_blank'} href={'https://food-quality.vercel.app'}>
                 <img
                     className=" rounded-lg shadow-lg w-full h-full "
-                    src="https://pxyqknxfvimxdcmplbff.supabase.co/storage/v1/object/public/items/SCR-20241118-blbm.jpeg"
+                    src="https://pxyqknxfvimxdcmplbff.supabase.co/storage/v1/object/public/items//foodQuality.png"
 
                 />
             </a>
