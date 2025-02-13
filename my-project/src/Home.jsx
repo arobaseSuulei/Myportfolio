@@ -37,11 +37,11 @@ export default function Home() {
                 </ScrollRevealItem>
 
 
-                <ScrollRevealItem delay={0.6}>
+
                     <div>
                         <Projects />
                     </div>
-                </ScrollRevealItem>
+
 
 
 
