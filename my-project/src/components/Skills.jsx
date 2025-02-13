@@ -34,7 +34,7 @@ export default function Skills() {
         },
         {
             id:4,
-            name:"PostgreSql",
+            name:"Figma",
             url:postgreLogo,
         },
         {
