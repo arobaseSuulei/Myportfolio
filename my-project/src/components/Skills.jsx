@@ -5,6 +5,7 @@ import typescriptLogo from "../assets/typescript.png"
 
 import reactLogo from "../assets/atom.png"
 import figmaLogo from "../assets/figma.png"
+
 import phpLogo from "../assets/php.png"
 import tailwindLogo from "../assets/icons8-tailwind-css-384.png"
 
@@ -35,7 +36,7 @@ export default function Skills() {
         {
             id:4,
             name:"Figma",
-            url:postgreLogo,
+            url:figmaLogo,
         },
         {
             id:5,
