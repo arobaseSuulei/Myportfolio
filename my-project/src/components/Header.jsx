@@ -8,38 +8,40 @@ import {Avatar, Badge, Box,Text, Card, Em, Flex} from "@radix-ui/themes";
 
 export default function Header() {
     return(
-        <div className={' '}>
-            <div className={'flex flex-col flex-wrap gap-6 py-2 p-4'}>
-                <nav className={' '}>
+        <div className={'sm:px-36 flex flex-col gap-8 mt-36 sm:mt-40'}>
+
+            <div>
+                <h1 className={'font-semibold text-xl sm:text-2xl'}>
+                    Hi, i am <a className={'text-orange-500'}>souleymane</a>. I am a student on computer science student
+                    and web developer.
+                    I design and built cool things.
+                </h1>
 
 
-                    <p className={'flex flex-col gap-4'}>
-                        <h1 className={'font-semibold pt-6 text-3xl sm:text-5xl'}>Hi, je suis souleymane</h1>
+            </div>
 
+            <div className={'flex items-center  gap-4 '}>
+                <div
+                    className={'flex items-center   gap-4  '}>
 
-                    </p>
-
-
-                </nav>
-                <p className={' '}> Etudiant en informatique passionné par la programmation et les
-                    algorithmes</p>
-
-                <nav className={'flex gap-4'}>
 
                     <a href={'mailto:slimanediallo2105@gmail.com'}
                        className={'shadow-[0_0_15px_rgba(255,255,255)] flex items-center w-36 text-xs bg-white text-black gap-1 border rounded-full p-4'}>
-                        <p className={'sm:block hidden '}> Send an email</p>
-                        <p className={'sm:hidden block'}>email</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                             className="size-4">
-                            <path fill-rule="evenodd"
-                                  d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
-                                  clip-rule="evenodd"/>
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                             stroke="currentColor" className="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
                         </svg>
+
+                        <p className={'font-semibold '}> Send an email</p>
+
+
+
 
                     </a>
 
-                    {/* Mon cv*/}
 
                     <a target={'_blank'}
                        href={'https://drive.google.com/file/d/1XXiPlo3oJVYvFl2tBXph-1jPobbw4wR7/view?usp=sharing'}
@@ -50,37 +52,10 @@ export default function Header() {
                     </a>
 
 
-
-
-                </nav>
-
-
-
-
-                <nav className={'flex flex-col gap-6 mt-4'}>
-                    <h1 className={'font-semibold text-xl'}>A propos</h1>
-                    <p className={'opacity-60 text-sm '}>Etudiant en 3e année en cycle ingénieur informatique, je
-                        suis un passionné de la programmation
-                        dès mon plus jeune âge. Je suis en particulier attiré par le developpement d'applications web et
-                        l' intelligence artificielle, mais aussi ouvert à
-                        tous les secteurs du developpement informatique en général
-                    </p>
-                </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                </div>
             </div>
+
+
         </div>
     );
 }

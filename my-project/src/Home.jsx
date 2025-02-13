@@ -19,9 +19,9 @@ import Academic from "./components/Academic.jsx";
 
 export default function Home() {
     return (
-        <Theme appearance={"light"}>
+        <Theme appearance={"dark"}>
             <Navbar />
-            <div className={"grid grid-cols-1 sm:mx-72 gap-4 min-h-screen"}>
+            <div className={" min-h-screen"}>
 
                 <ScrollRevealItem delay={0.2}>
                     <div>
@@ -44,11 +44,7 @@ export default function Home() {
                 </ScrollRevealItem>
 
 
-                <ScrollRevealItem delay={0.4}>
-                    <div>
-                        <Academic/>
-                    </div>
-                </ScrollRevealItem>
+
 
 
                 <ScrollRevealItem delay={0.2}>

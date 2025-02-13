@@ -1,29 +1,89 @@
 import React from 'react';
 import {useEffect,useState} from "react";
 import {Link} from "react-router-dom";
+import typescriptLogo from "../assets/typescript.png"
+import postgreLogo from "../assets/Postgre.png"
+import reactLogo from "../assets/atom.png"
+import figmaLogo from "../assets/figma.png"
+import phpLogo from "../assets/php.png"
+import tailwindLogo from "../assets/icons8-tailwind-css-384.png"
+
+
+
 
 
 export default function Skills() {
+
+
+
+    const stack=[
+        {
+            id:1,
+            name:"Typescript",
+            url:typescriptLogo,
+        },
+        {
+            id:2,
+            name:"ReactJS",
+            url:reactLogo,
+        },
+        {
+            id:3,
+            name:"Figma",
+            url:figmaLogo,
+        },
+        {
+            id:4,
+            name:"PostgreSql",
+            url:postgreLogo,
+        },
+        {
+            id:5,
+            name:"Php",
+            url:phpLogo,
+        },
+        {
+            id:6,
+            name:"Tailwind CSS",
+            url:tailwindLogo,
+        }
+
+    ];
     return(
-        <div className={'flex flex-col gap-4 p-4'}>
-            <h1 className={'font-semibold text-xl'}>Skills</h1>
-
-            <nav className={'flex flex-wrap gap-2'}>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-black text-white'}>React js</p>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>Tailwind css</p>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>Supabase</p>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 px-4 text-xs bg-white text-black'}>C</p>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>SQL</p>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>Javascript</p>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 px-4 text-xs bg-white text-black'}>C++</p>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>UML models</p>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>Php</p>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>Git</p>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>Figma</p>
-                <p className={'cursor-pointer hover:opacity-60 font-semibold rounded-lg p-1 text-xs bg-white text-black'}>Linux bash</p>
+        <div className={'flex flex-col items-center justify-center gap-4 p-4'}>
+            <h1 className={'mt-6 font-semibold text-xl'}>work stack</h1>
 
 
-            </nav>
+            <div className={'grid grid-cols-2 sm:grid-cols-4 gap-4'}>
+
+
+
+
+
+                    {stack.map((item,index) => (
+                        <div className={"flex  gap-2 items-center py-4 px-5 border-[0.2px] border-gray-500 text-sm font-semibold p-2 rounded-full"} key={item.id}>
+                            <a>
+                                <img src={item.url} className={'w-8'}/>
+                            </a>
+                            <a>{item.name}</a>
+                        </div>
+                    ))}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
         </div>
     );
 }
