@@ -2,7 +2,7 @@ import React from 'react';
 import {useEffect,useState} from "react";
 import {Link} from "react-router-dom";
 import typescriptLogo from "../assets/typescript.png"
-import postgreLogo from "../assets/Postgre.png"
+
 import reactLogo from "../assets/atom.png"
 import figmaLogo from "../assets/figma.png"
 import phpLogo from "../assets/php.png"
