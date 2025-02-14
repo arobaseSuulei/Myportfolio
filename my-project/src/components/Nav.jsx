@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 
 export default function Nav() {
     return(
-        <div className={' flex flex-col gap-6'}>
+        <div className={' mt-20 flex flex-col gap-6'}>
 
             <h1 className={'font-semibold flex items-center justify-center text-sm'}>
                 <p className={'bg-white text-black p-2 rounded-lg'}>Mes réseaux sociaux</p>

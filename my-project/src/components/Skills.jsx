@@ -5,6 +5,7 @@ import typescriptLogo from "../assets/typescript.png"
 
 import reactLogo from "../assets/atom.png"
 import figmaLogo from "../assets/figma.png"
+import postgreLogo from "../assets/postgre.png"
 
 import phpLogo from "../assets/php.png"
 import tailwindLogo from "../assets/icons8-tailwind-css-384.png"
@@ -35,8 +36,8 @@ export default function Skills() {
         },
         {
             id:4,
-            name:"Figma",
-            url:figmaLogo,
+            name:"postgreSQL",
+            url:postgreLogo,
         },
         {
             id:5,
@@ -52,7 +53,7 @@ export default function Skills() {
     ];
     return(
         <div className={'flex flex-col items-center justify-center gap-4 p-4'}>
-            <h1 className={'mt-6 font-semibold text-xl'}>work stack</h1>
+            <h1 id={"work"} className={'mt-6 font-semibold text-xl'}>work stack</h1>
 
 
             <div className={'grid grid-cols-2 sm:grid-cols-4 gap-4'}>
