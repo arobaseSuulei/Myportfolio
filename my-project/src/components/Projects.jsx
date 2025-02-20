@@ -67,7 +67,7 @@ export default function Projects() {
                         <div className={'grid grid-cols-1  gap-2'}>
 
 
-                            <div className={'border rounded-lg max-w-full min-w-0  p-4 '}>
+                            <div className={'border  rounded-lg max-w-full min-w-0  p-4 '}>
 
                                 {/*info*/}
 
