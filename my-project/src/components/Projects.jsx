@@ -17,7 +17,7 @@ export default function Projects() {
             url:"https://chatgo-realtime.vercel.app/",
             image:false,
             imageUrl:"https://pxyqknxfvimxdcmplbff.supabase.co/storage/v1/object/public/items//chatGo.mov",
-            description:"ChatGO is a real-time messaging app built with React, Tailwind CSS, and Supabase.\n" +
+            description:"ChatGO is a real-time messaging app built with React, Tailwind CSS, and Supabase/supabase-realtime.\n" +
                 "                            It allows users to send and receive messages seamlessly, offering a sleek and responsive\n" +
                 "                            design"
 
