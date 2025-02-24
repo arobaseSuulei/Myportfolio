@@ -17,9 +17,12 @@ export default function Nav() {
 
 
 
-                <a href={'https://www.linkedin.com/in/souleymane-diallo-2b13a02b9/'} className={' p-2'}>
+                <a
+                    //href={'https://www.linkedin.com/in/souleymane-diallo-2b13a02b9/'}
+                    className={' p-2'}>
                     <img className={'w-8'}
-                         src={'https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg'}/>
+                         src={'https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg'}
+                    />
                 </a>
 
 

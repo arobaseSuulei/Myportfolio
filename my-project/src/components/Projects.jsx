@@ -5,6 +5,7 @@ import ScrollRevealItem from "./ScrollRevealItem.jsx";
 import ProjectFood from "./ProjectFood.jsx";
 import screenPortfolio from "../assets/Souleymane - Portfolio.jpeg"
 import screenFood from "../assets/foodQ.jpeg"
+import screenChatgo from "../assets/Clip2.mp4"
 
 
 export default function Projects() {
@@ -13,13 +14,13 @@ export default function Projects() {
     const project=[
         {
             id:1,
-            name:"chatGO - messaging app",
+            name:"chatGO - messaging / analyzer chat",
             url:"https://chatgo-realtime.vercel.app/",
             image:false,
-            imageUrl:"https://pxyqknxfvimxdcmplbff.supabase.co/storage/v1/object/public/items//chatGo.mov",
-            description:"ChatGO is a real-time messaging app built with React, Tailwind CSS, and Supabase/supabase-realtime.\n" +
-                "                            It allows users to send and receive messages seamlessly, offering a sleek and responsive\n" +
-                "                            design"
+            imageUrl:screenChatgo,
+            description:"ChatGO is a real-time messaging app built with React, tailwind, python working with ML model and Supabase/supabase-realtime.\n" +
+                "                            It allows users to send and receive messages seamlessly, analyzing the messages before sending with ML tools transformers \n" +
+                "                            I also used railway for the deployement of the script python"
 
         },
         {
@@ -71,7 +72,7 @@ export default function Projects() {
 
                                 {/*info*/}
 
-                                <nav className={'flex flex-col py-2 px-2'}>
+                                <nav className={'flex flex-col py-12 px-2'}>
 
                                     <p className={'flex flex-col sm:py-6 sm:px-2 px-2 py-2 gap-2'}>
                                         <a className={'flex items-center gap-1 sm:text-2xl font-semibold'}>
