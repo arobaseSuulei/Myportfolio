@@ -6,6 +6,8 @@ import ProjectFood from "./ProjectFood.jsx";
 import screenPortfolio from "../assets/Souleymane - Portfolio.jpeg"
 import screenFood from "../assets/foodQ.jpeg"
 import screenChatgo from "../assets/Clip2.mp4"
+import kaggle from "../assets/kaggle.png"
+
 
 
 export default function Projects() {
@@ -37,6 +39,22 @@ export default function Projects() {
         },
         {
             id:3,
+            name:"Predict Student Performance with linear regression",
+            url:"https://github.com/arobaseSuulei/gradePrediction",
+            image: true,
+            imageUrl:kaggle,
+            description:" This project aims to predict a student's final grade based on key factors such as:\n" +
+                "\n" +
+                "Daily study hours 📖\n" +
+                "Sleep hours 😴\n" +
+                "Socioeconomic score 💰\n" +
+                "Class attendance (%) 🎓 " +
+                "Tech Stack: Python, Pandas, NumPy, Scikit-Learn " +
+                " This project highlights the importance of data-driven insights in education and demonstrates how predictive models can assist in academic analysis."
+
+        },
+        {
+            id:4,
             name:"Portfolio",
             image:true,
             imageUrl:screenPortfolio,
