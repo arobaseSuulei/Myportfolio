@@ -44,7 +44,7 @@ export default function Header() {
 
 
                     <a target={'_blank'}
-                      // href={'https://drive.google.com/file/d/1XXiPlo3oJVYvFl2tBXph-1jPobbw4wR7/view?usp=sharing'}
+                       href={'https://drive.google.com/file/d/1XXiPlo3oJVYvFl2tBXph-1jPobbw4wR7/view?usp=sharing'}
                        className={'flex items-center gap-2 border rounded-full w-24 text-xs hover:bg-white hover:text-black hover:shadow-[0_0_15px_rgba(255,255,255)] transition ease-out p-4 px-6'}>
                         <p>
                             CV
