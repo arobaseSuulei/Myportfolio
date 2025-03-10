@@ -22,7 +22,7 @@ export default function Navbar() {
                        href={"#work"}>Work
                     </a>
                     <a className={"rounded-lg p-2 text-sm   transition ease-in-out duration-500 "}
-                       href={"https://drive.google.com/file/d/1XXiPlo3oJVYvFl2tBXph-1jPobbw4wR7/view?usp=sharing"}
+                       href={"https://drive.google.com/file/d/1cpZ7nD-6bBiWzF89Fe8039bI6HpraMiT/view?usp=sharing"}
                     >
                         CV
                     </a>
