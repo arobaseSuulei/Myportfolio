@@ -7,6 +7,7 @@ import screenPortfolio from "../assets/Souleymane - Portfolio.jpeg"
 import screenFood from "../assets/foodQ.jpeg"
 import screenChatgo from "../assets/Clip2.mp4"
 import kaggle from "../assets/kaggle.png"
+import classnotes from "../assets/classnote.png"
 
 
 
@@ -62,6 +63,15 @@ export default function Projects() {
             description:"My portfolio is a modern and responsive web showcase built with " +
                 "React and Tailwind CSS. It highlights my projects," +
                 " skills, and experience, offering an interactive and visually appealing experience."
+
+        },
+        {
+            id:4,
+            name:"ClassNotes Ai -- demo(onWorking)",
+            image:true,
+            imageUrl:classnotes,
+            url:"https://pixelblue-hackaton.vercel.app/",
+            description:"ClassNotes Ai is an ai app for helping to take notes efficiently in class"
 
         }
 
