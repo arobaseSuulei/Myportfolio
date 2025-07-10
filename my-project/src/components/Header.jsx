@@ -12,9 +12,7 @@ export default function Header() {
 
             <div>
                 <h1 className={'font-semibold text-xl sm:text-2xl'}>
-                    Hi, i am <a className={'text-orange-500'}>souleymane</a>. I am a computer science student
-                    passionate about AI & Machine Learning.
-                    I design and build cool things.
+                   Hey <a className={'text-orange-500'}>souleymane</a> here, I’m a computer science student passionate about AI. I love building useful tools, my portfolio showcases projects I’ve worked on to improve my skills and solve real-world problems.
                 </h1>
 
 

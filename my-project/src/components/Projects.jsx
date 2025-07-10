@@ -8,6 +8,7 @@ import screenFood from "../assets/foodQ.jpeg"
 import screenChatgo from "../assets/Clip2.mp4"
 import kaggle from "../assets/kaggle.png"
 import classnotes from "../assets/classnote.png"
+import airbnb from "../assets/airbnbAI.mp4"
 
 
 
@@ -17,7 +18,8 @@ export default function Projects() {
     const project=[
         {
             id:1,
-            name:"chatGO - messaging / analyzer chat",
+            name:"ChatGO",
+            pin:"demo",
             url:"https://chatgo-realtime.vercel.app/",
             image:false,
             imageUrl:screenChatgo,
@@ -28,19 +30,20 @@ export default function Projects() {
         },
         {
             id:2,
-            name:"Food Quality",
-            url:"https://food-quality.vercel.app",
-            image: true,
-            imageUrl:screenFood,
-            description:"Food Quality is a sleek and interactive app built with React, " +
-                "Tailwind CSS, SQL, and Framer Motion. It provides real-time ratings and insights on the " +
-                "quality of fast food menus." +
-                " Food Quality ensures an intuitive and dynamic way to evaluate and compare meals."
-
+            name:"airbnb Intelligence",
+            pin:"working on",
+            url:"https://github.com/arobaseSuulei/airbnb-ai",
+            image: false,
+            imageUrl:airbnb,
+            description:"Airbnb Intelligence is a voice-based booking app that lets users reserve an Airbnb just by talking to an AI.\n" +
+                "I built it using React for the frontend, Python for the backend, Grok’s LLM API for natural language understanding, and Supabase for authentication and database management.\n" +
+                "The AI handles user conversations, understands booking needs, and interacts with the database to suggest and confirm available listings.\n" +
+                "This project combines conversational AI with real-world application logic, creating a smooth and futuristic booking experience."
         },
         {
             id:3,
-            name:"Predict Student Performance with linear regression",
+            name:"Predict Student Performance",
+            pin:"linear reg",
             url:"https://github.com/arobaseSuulei/gradePrediction",
             image: true,
             imageUrl:kaggle,
@@ -54,25 +57,15 @@ export default function Projects() {
                 " This project highlights the importance of data-driven insights in education and demonstrates how predictive models can assist in academic analysis."
 
         },
-        {
-            id:4,
-            name:"Portfolio",
-            image:true,
-            imageUrl:screenPortfolio,
-            url:"https://souleyd-portfolio.vercel.app",
-            description:"My portfolio is a modern and responsive web showcase built with " +
-                "React and Tailwind CSS. It highlights my projects," +
-                " skills, and experience, offering an interactive and visually appealing experience."
 
-        },
         {
             id:4,
-            name:"ClassNotes Ai -- demo(onWorking)",
+            name:"ClassNotes Ai ",
+            pin:"gdg finalist",
             image:true,
             imageUrl:classnotes,
             url:"https://pixelblue-hackaton.vercel.app/",
             description:"ClassNotes Ai is an ai app for helping to take notes efficiently in class"
-
         }
 
     ];
@@ -96,7 +89,7 @@ export default function Projects() {
                         <div className={'grid grid-cols-1  gap-2'}>
 
 
-                            <div className={'border  rounded-lg max-w-full min-w-0  p-4 '}>
+                            <div className={'border-[0.2px] border-gray-300 rounded-lg max-w-full min-w-0  p-4 '}>
 
                                 {/*info*/}
 
@@ -109,8 +102,11 @@ export default function Projects() {
                                             <p className={'flex w-full justify-between items-center'}>
 
 
-                                                <h1 className={'flex flex-col gap-1 sm:gap-2'}>
+                                                <h1 className={'flex items-center gap-2 sm:gap-2'}>
                                                     <a className={'font-semibold text-lg sm:text-2xl'}>{item.name}</a>
+                                                    <p className={'text-xs border rounded-full px-4 py-1'}>
+                                                        <a>{item.pin}</a>
+                                                    </p>
 
 
                                                 </h1>

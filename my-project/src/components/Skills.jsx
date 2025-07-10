@@ -9,6 +9,8 @@ import postgreLogo from "../assets/postgre.png"
 import pythonLogo from "../assets/python.png"
 import phpLogo from "../assets/php.png"
 import tailwindLogo from "../assets/icons8-tailwind-css-384.png"
+import huggingFace from "../assets/huggingFace.png"
+import javaLogo from "../assets/java-coffee-cup-logo.png"
 
 
 
@@ -21,8 +23,8 @@ export default function Skills() {
     const stack=[
         {
             id:1,
-            name:"Typescript",
-            url:typescriptLogo,
+            name:"hugging face",
+            url:huggingFace,
         },
         {
             id:2,
@@ -36,7 +38,7 @@ export default function Skills() {
         },
         {
             id:4,
-            name:"postgreSQL",
+            name:"SQL",
             url:postgreLogo,
         },
         {
@@ -53,6 +55,11 @@ export default function Skills() {
             id:7,
             name:"python",
             url:pythonLogo,
+        },
+        {
+            id:8,
+            name:"Java",
+            url:javaLogo,
         }
 
     ];
