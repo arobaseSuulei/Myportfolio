@@ -6,10 +6,10 @@ import ProjectFood from "./ProjectFood.jsx";
 import screenPortfolio from "../assets/Souleymane - Portfolio.jpeg"
 import screenFood from "../assets/foodQ.jpeg"
 import screenChatgo from "../assets/Clip2.mp4"
-import kaggle from "../assets/kaggle.png"
+
 import classnotes from "../assets/classnote.png"
 import airbnb from "../assets/airbnbAI.mp4"
-
+import appleTV from "../assets/appleTV.mp4"
 
 
 export default function Projects() {
@@ -42,19 +42,12 @@ export default function Projects() {
         },
         {
             id:3,
-            name:"Predict Student Performance",
-            pin:"linear reg",
-            url:"https://github.com/arobaseSuulei/gradePrediction",
-            image: true,
-            imageUrl:kaggle,
-            description:" This project aims to predict a student's final grade based on key factors such as:\n" +
-                "\n" +
-                "Daily study hours 📖\n" +
-                "Sleep hours 😴\n" +
-                "Socioeconomic score 💰\n" +
-                "Class attendance (%) 🎓 " +
-                "Tech Stack: Python, Pandas, NumPy, Scikit-Learn " +
-                " This project highlights the importance of data-driven insights in education and demonstrates how predictive models can assist in academic analysis."
+            name:"Apple TV+ Recommandation algorithm",
+            pin:"kmeans",
+            url:"https://apple-tv-recommandation.vercel.app/",
+            image: false,
+            imageUrl:appleTV,
+            description:" A simple recommendation system for Apple TV+ shows using K-means clustering. Shows are grouped into clusters based on metadata (genre, country, age rating), and recommendations are made by suggesting other shows from the same cluster when one is selected."
 
         },
 
