@@ -24,11 +24,12 @@ export default function Navbar() {
                     <a className={"rounded-lg p-2 text-sm   transition ease-in-out duration-500 "}
                        href={"#work"}>Work
                     </a>
+
                     <a className={"rounded-lg p-2 text-sm   transition ease-in-out duration-500 "}
-                       href={"https://drive.google.com/file/d/1cpZ7nD-6bBiWzF89Fe8039bI6HpraMiT/view?usp=sharing"}
-                    >
-                        CV
+                       href={"#work"}>Blog
                     </a>
+
+                    
                     <a className={"rounded-lg p-2 text-sm   transition ease-in-out duration-500 "}
                        href={"mailto:slimanediallo2105@gmail.com"}>Contact
                     </a>
