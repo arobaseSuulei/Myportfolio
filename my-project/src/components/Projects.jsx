@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import ProjectTodo from "./ProjectTodo.jsx";
+
 import ProjectPortfolio from "./ProjectPortfolio.jsx";
 import ScrollRevealItem from "./ScrollRevealItem.jsx";
 import ProjectFood from "./ProjectFood.jsx";
@@ -21,6 +21,7 @@ export default function Projects() {
             name:"ChatGO",
             pin:"demo",
             url:"https://chatgo-realtime.vercel.app/",
+            github:"https://github.com/arobaseSuulei/airbnb-ai",
             image:false,
             imageUrl:screenChatgo,
             description:"ChatGO is a real-time messaging app built with React, tailwind, python working with ML model and Supabase/supabase-realtime.\n" +
@@ -33,6 +34,7 @@ export default function Projects() {
             name:"airbnb Intelligence",
             pin:"working on",
             url:"https://github.com/arobaseSuulei/airbnb-ai",
+            github:"https://github.com/arobaseSuulei/airbnb-ai",
             image: false,
             imageUrl:airbnb,
             description:"Airbnb Intelligence is a voice-based booking app that lets users reserve an Airbnb just by talking to an AI.\n" +
@@ -45,6 +47,7 @@ export default function Projects() {
             name:"Apple TV+ Recommandation algorithm",
             pin:"kmeans",
             url:"https://apple-tv-recommandation.vercel.app/",
+            github:"https://github.com/arobaseSuulei/airbnb-ai",
             image: false,
             imageUrl:appleTV,
             description:" A simple recommendation system for Apple TV+ shows using K-means clustering. Shows are grouped into clusters based on metadata (genre, country, age rating), and recommendations are made by suggesting other shows from the same cluster when one is selected."
@@ -58,6 +61,7 @@ export default function Projects() {
             image:true,
             imageUrl:classnotes,
             url:"https://pixelblue-hackaton.vercel.app/",
+            github:"https://github.com/arobaseSuulei/airbnb-ai",
             description:"ClassNotes Ai is an ai app for helping to take notes efficiently in class"
         }
 
@@ -67,7 +71,7 @@ export default function Projects() {
 
 
     return(
-        <div className={'flex flex-col sm:p-4 gap-8'}>
+        <div className={'flex flex-col  sm:p-4 gap-8'}>
 
             <h1 className={'font-semibold flex items-center justify-center text-sm'}>
                 <p className={'font-semibold text-xl sm:text-2xl text-white p-2 rounded-lg'}>Highlighted
@@ -79,7 +83,7 @@ export default function Projects() {
 
 
                     <ScrollRevealItem>
-                        <div className={'grid grid-cols-1  gap-2'}>
+                        <div className={'grid grid-cols-1 sm:grid-cols-2  gap-2'}>
 
 
                             <div className={'border-[0.2px] border-gray-300 rounded-lg max-w-full min-w-0  p-4 '}>
@@ -119,7 +123,7 @@ export default function Projects() {
                                     </p>
 
 
-                                    <p>
+                                    <p className="sm:hidden">
                                         {item.description}
 
                                     </p>
@@ -145,6 +149,25 @@ export default function Projects() {
                                 </a>
 
 
+                            </div>
+
+                            <div className="hidden px-12 sm:flex flex-col gap-12 items-center justify-center">
+                               {item.description}
+
+                               <span className="flex gap-4">
+                                    <a href={item.github} target="_blank" className="flex gap-2 items-center rounded-full  px-3 py-1 bg-white text-black">
+                                        <p>Read more</p>
+                                        <img className="w-4 h-4" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"/>
+                                    </a>
+
+                                    <a href={item.url} target="_blank" className="flex gap-2 items-center rounded-full border px-3 py-1  ">
+                                        <p>Read more</p>
+
+                                    </a>
+                                    
+                    
+                               </span>
+                        
                             </div>
 
 

@@ -8,12 +8,18 @@ import {Avatar, Badge, Box,Text, Card, Em, Flex} from "@radix-ui/themes";
 
 export default function Header() {
     return(
-        <div className={'sm:px-36 flex flex-col gap-8 mt-36 sm:mt-40'}>
+        <div className={'sm:px-52 flex flex-col gap-8 mt-36 sm:mt-40'}>
 
             <div>
-                <h1 className={'font-semibold text-xl sm:text-2xl'}>
-                   Hey <a className={'text-orange-500'}>souleymane</a> here, I’m a computer science student passionate about AI. I love building useful tools, my portfolio showcases projects I’ve worked on to improve my skills and solve real-world problems.
+
+                
+
+
+                <h1 className={'font-times text-xl sm:text-2xl'}>
+                   Hey <a className={''}>souleymane</a> here, I'm a young AI student, passionate about building ethical, impactful, and inclusive technology for Africa. I believe in using AI to solve real-world challenges.
                 </h1>
+
+
 
 
             </div>

@@ -9,8 +9,11 @@ export default function Navbar() {
         <div className={'  px-4 py-4 fixed top-0 left-0  w-full z-50 flex justify-between items-center '}>
 
 
-            <div className={'flex items-center'}>
-                <p className={'font-semibold text-xl text-orange-500'}>SD</p>
+            <div className="border backdrop-blur-md font-times flex flex-col w-16 h-16 px-2">
+                <p className="text-xs flex justify-end">Ai</p>
+                <p className="flex justify-center text-2xl items-center">Su</p>
+                <p className="flex justify-center text-xs items-center">1,0</p>
+
 
             </div>
 
