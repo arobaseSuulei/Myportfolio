@@ -161,7 +161,7 @@ export default function Projects() {
                                     </a>
 
                                     <a href={item.url} target="_blank" className="flex gap-2 items-center rounded-full border px-3 py-1  ">
-                                        <p>Read more</p>
+                                        <p>Link URL</p>
 
                                     </a>
                                     
