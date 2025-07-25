@@ -43,7 +43,7 @@ export default function Skills() {
         },
         {
             id:5,
-            name:"Php",
+            name:"Kotlin",
             url:phpLogo,
         },
         {
