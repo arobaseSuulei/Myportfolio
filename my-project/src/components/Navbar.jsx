@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className="border backdrop-blur-md font-times flex flex-col w-16 h-16 px-2">
                 <p className="text-xs flex justify-end">Ai</p>
                 <p className="flex justify-center text-2xl items-center">Su</p>
-                <p className="flex justify-center text-xs items-center">1,0</p>
+                
 
 
             </div>
