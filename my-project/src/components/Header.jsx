@@ -15,8 +15,8 @@ export default function Header() {
                 
 
 
-                <h1 className={'font-times text-xl sm:text-2xl'}>
-                   Hey <a className={''}>souleymane</a> here, I'm a young AI student, passionate about building ethical, impactful, and inclusive technology. I believe in using AI to solve real-world challenges.
+                <h1 className={' text-xl sm:text-2xl'}>
+                   Hey <a className={''}>souleymane</a> here, Software Engineering student, passionate about building impactful technology. I believe in using software to solve real-world challenges.
                 </h1>
 
 
