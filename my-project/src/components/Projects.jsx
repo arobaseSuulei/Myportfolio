@@ -61,7 +61,7 @@ export default function Projects() {
             image:true,
             imageUrl:classnotes,
             url:"https://pixelblue-hackaton.vercel.app/",
-            github:"https://github.com/arobaseSuulei/airbnb-ai",
+            github:"https://github.com/arobaseSuulei/classnotes-ai",
             description:"ClassNotes Ai is an ai app for helping to take notes efficiently in class"
         }
 
