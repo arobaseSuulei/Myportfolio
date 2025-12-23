@@ -6,7 +6,7 @@ import {Theme} from "@radix-ui/themes";
 
 export default function App() {
     useEffect(() => {
-        document.title = "Souleymane - Portfolio";
+        document.title = "Thierno - Portfolio";
     }, []);
 
     return (
