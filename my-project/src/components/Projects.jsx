@@ -21,12 +21,10 @@ export default function Projects() {
             name:"ChatGO",
             pin:"demo",
             url:"https://chatgo-realtime.vercel.app/",
-            github:"https://github.com/arobaseSuulei/airbnb-ai",
+            github:"https://github.com/arobaseSuulei/chatGO",
             image:false,
             imageUrl:screenChatgo,
-            description:"ChatGO is a real-time messaging app built with React, tailwind, python working with ML model and Supabase/supabase-realtime.\n" +
-                "                            It allows users to send and receive messages seamlessly, analyzing the messages before sending with ML tools transformers \n" +
-                "                            I also used railway for the deployement of the script python"
+            description:"ChatGO is a real-time messaging app built for Africans who want to communicate in their local languages (  Working On... please wait me and supports me ;)"
 
         },
         {
