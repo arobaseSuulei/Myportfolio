@@ -24,7 +24,7 @@ export default function Projects() {
             github:"https://github.com/arobaseSuulei/chatGO",
             image:false,
             imageUrl:screenChatgo,
-            description:"ChatGO is a real-time messaging app built for Africans who want to communicate in their local languages (  Working On... please wait me and supports me ;)"
+            description:"ChatGO is a real-time messaging app built for who want to communicate in a forum (  Working On... please wait me and supports me ;)"
 
         },
         {
