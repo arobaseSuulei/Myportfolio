@@ -45,7 +45,7 @@ export default function Projects() {
             name:"Apple TV+ Recommandation algorithm",
             pin:"kmeans",
             url:"https://apple-tv-recommandation.vercel.app/",
-            github:"https://github.com/arobaseSuulei/airbnb-ai",
+            github:"https://github.com/arobaseSuulei/AppleTV-recommandation-algo",
             image: false,
             imageUrl:appleTV,
             description:" A simple recommendation system for Apple TV+ shows using K-means clustering. Shows are grouped into clusters based on metadata (genre, country, age rating), and recommendations are made by suggesting other shows from the same cluster when one is selected."
