@@ -11,6 +11,7 @@ import phpLogo from "../assets/php.png"
 import tailwindLogo from "../assets/icons8-tailwind-css-384.png"
 import huggingFace from "../assets/huggingFace.png"
 import javaLogo from "../assets/java-coffee-cup-logo.png"
+import gymnasuim from "../assets/gymnasium.png"
 
 
 
@@ -43,14 +44,15 @@ export default function Skills() {
         },
         {
             id:5,
-            name:"Kotlin",
-            url:phpLogo,
+            name:"gymnasuim",
+            url:gymnasuim
+            
         },
-        {
-            id:6,
-            name:"Tailwind CSS",
-            url:tailwindLogo,
-        },
+        //{
+            //id:6,
+            //name:"T",
+            //url:,
+        //},
         {
             id:7,
             name:"python",

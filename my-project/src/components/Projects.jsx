@@ -11,6 +11,8 @@ import classnotes from "../assets/classnote.png"
 import airbnb from "../assets/airbnbAI.mp4"
 import appleTV from "../assets/appleTV.mp4"
 
+import lunar from "../assets/lunar.mp4"
+
 
 export default function Projects() {
 
@@ -61,7 +63,18 @@ export default function Projects() {
             url:"https://pixelblue-hackaton.vercel.app/",
             github:"https://github.com/arobaseSuulei/classnotes-ai",
             description:"ClassNotes Ai is an ai app for helping to take notes efficiently in class"
-        }
+        },
+        {
+            id:5,
+            name:"Lunar Lander Rocket",
+            pin:"RL",
+            url:"https://huggingface.co/suuley/ppo-LunarLander-v2",
+            github:"https://huggingface.co/suuley/ppo-LunarLander-v2",
+            image:false,
+            imageUrl:lunar,
+            description:"How to train a rocket to land on Lunar ? using Reinforcement Learning you can train an agent to launch a rocket on moon, training by giving Actions, rewards. We trained the agent on 16 environnements on a GPU, and we "
+
+        },
 
     ];
 
