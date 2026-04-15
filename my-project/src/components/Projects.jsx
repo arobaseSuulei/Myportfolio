@@ -72,7 +72,7 @@ export default function Projects() {
             github:"https://huggingface.co/suuley/ppo-LunarLander-v2",
             image:false,
             imageUrl:lunar,
-            description:"How to train a rocket to land on Lunar ? using Reinforcement Learning you can train an agent to launch a rocket on moon, training by giving Actions, rewards. We trained the agent on 16 environnements on a GPU, and we "
+            description:"How to train a rocket to land on the Moon? Using reinforcement learning, you can train an agent to control a rocket and land it on the Moon by learning from actions and rewards. We trained the agent across 16 environments on a GPU, and we let it learn through trial and error "
 
         },
 
