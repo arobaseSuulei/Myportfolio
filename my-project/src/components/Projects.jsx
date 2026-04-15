@@ -20,6 +20,17 @@ export default function Projects() {
     const project=[
         {
             id:1,
+            name:"Lunar Lander Rocket",
+            pin:"RL",
+            url:"https://huggingface.co/suuley/ppo-LunarLander-v2",
+            github:"https://huggingface.co/suuley/ppo-LunarLander-v2",
+            image:false,
+            imageUrl:lunar,
+            description:"How to train a rocket to land on the Moon? Using reinforcement learning, you can train an agent to control a rocket and land it on the Moon by learning from actions and rewards. We trained the agent across 16 environments on a GPU, and we let it learn through trial and error "
+
+        },
+        {
+            id:2,
             name:"ChatGO",
             pin:"demo",
             url:"https://chatgo-realtime.vercel.app/",
@@ -30,7 +41,7 @@ export default function Projects() {
 
         },
         {
-            id:2,
+            id:5,
             name:"airbnb Intelligence",
             pin:"working on",
             url:"https://github.com/arobaseSuulei/airbnb-ai",
@@ -64,17 +75,7 @@ export default function Projects() {
             github:"https://github.com/arobaseSuulei/classnotes-ai",
             description:"ClassNotes Ai is an ai app for helping to take notes efficiently in class"
         },
-        {
-            id:5,
-            name:"Lunar Lander Rocket",
-            pin:"RL",
-            url:"https://huggingface.co/suuley/ppo-LunarLander-v2",
-            github:"https://huggingface.co/suuley/ppo-LunarLander-v2",
-            image:false,
-            imageUrl:lunar,
-            description:"How to train a rocket to land on the Moon? Using reinforcement learning, you can train an agent to control a rocket and land it on the Moon by learning from actions and rewards. We trained the agent across 16 environments on a GPU, and we let it learn through trial and error "
-
-        },
+        
 
     ];
 
