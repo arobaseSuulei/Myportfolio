@@ -19,6 +19,18 @@ export default function Projects() {
 
 
     const project=[
+
+        {
+            id:6,
+            name:"Edge Vision Model",
+            pin:"TinyML",
+            image:true,
+            imageUrl:edgeVision,
+            url:"https://github.com/arobaseSuulei/edge-vision-model/tree/main",
+            github:"https://github.com/arobaseSuulei/edge-vision-model",
+            description:"Edge Vision Model is an end-to-end embedded computer vision project: a CNN trained on a custom image dataset (1260+ images) collected with an OV2640 / ESP32-CAM, designed to be optimized, quantized and deployed on a microcontroller (ESP32-S3) using TensorFlow Lite Micro for real-time image classification under strict memory and power constraints."
+        },
+        
         {
             id:1,
             name:"Lunar Lander Rocket",
@@ -66,16 +78,7 @@ export default function Projects() {
 
         },
 
-        {
-            id:6,
-            name:"Edge Vision Model",
-            pin:"TinyML",
-            image:true,
-            imageUrl:edgeVision,
-            url:"https://github.com/arobaseSuulei/edge-vision-model/tree/main",
-            github:"https://github.com/arobaseSuulei/edge-vision-model",
-            description:"Edge Vision Model is an end-to-end embedded computer vision project: a CNN trained on a custom image dataset (1260+ images) collected with an OV2640 / ESP32-CAM, designed to be optimized, quantized and deployed on a microcontroller (ESP32-S3) using TensorFlow Lite Micro for real-time image classification under strict memory and power constraints."
-        },
+        
 
 
     ];
