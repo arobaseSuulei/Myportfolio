@@ -12,7 +12,8 @@ import tailwindLogo from "../assets/icons8-tailwind-css-384.png"
 import huggingFace from "../assets/huggingFace.png"
 import javaLogo from "../assets/java-coffee-cup-logo.png"
 import cppLogo from "../assets/cpp.png"
-import tensorflow from "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/tensorflow-light.webp"
+import tensorflowLogo from "../assets/tensorflow.webp"
+
 
 
 
@@ -47,14 +48,8 @@ export default function Skills() {
         {
             id:5,
             name:"tensorflow",
-            url:tensorflow
-            
+            url:tensorflowLogo,
         },
-        //{
-            //id:6,
-            //name:"T",
-            //url:,
-        //},
         {
             id:7,
             name:"python",
