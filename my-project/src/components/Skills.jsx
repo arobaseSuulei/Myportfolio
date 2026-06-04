@@ -11,7 +11,9 @@ import phpLogo from "../assets/php.png"
 import tailwindLogo from "../assets/icons8-tailwind-css-384.png"
 import huggingFace from "../assets/huggingFace.png"
 import javaLogo from "../assets/java-coffee-cup-logo.png"
-import gymnasuim from "../assets/gymnasium.png"
+import cppLogo from "../assets/cpp.png"
+import tensorflow from "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/tensorflow-light.webp"
+
 
 
 
@@ -44,8 +46,8 @@ export default function Skills() {
         },
         {
             id:5,
-            name:"gymnasuim",
-            url:gymnasuim
+            name:"tensorflow",
+            url:tensorflow
             
         },
         //{
@@ -62,6 +64,11 @@ export default function Skills() {
             id:8,
             name:"Java",
             url:javaLogo,
+        },
+        {
+            id:9,
+            name:"C++",
+            url:cppLogo,
         }
 
     ];
