@@ -7,7 +7,6 @@ import screenPortfolio from "../assets/Souleymane - Portfolio.jpeg"
 import screenFood from "../assets/foodQ.jpeg"
 import screenChatgo from "../assets/Clip2.mp4"
 
-import classnotes from "../assets/classnote.png"
 import airbnb from "../assets/airbnbAI.mp4"
 import appleTV from "../assets/appleTV.mp4"
 
@@ -65,17 +64,6 @@ export default function Projects() {
             imageUrl:appleTV,
             description:" A simple recommendation system for Apple TV+ shows using K-means clustering. Shows are grouped into clusters based on metadata (genre, country, age rating), and recommendations are made by suggesting other shows from the same cluster when one is selected."
 
-        },
-
-        {
-            id:4,
-            name:"ClassNotes Ai ",
-            pin:"gdg finalist",
-            image:true,
-            imageUrl:classnotes,
-            url:"https://pixelblue-hackaton.vercel.app/",
-            github:"https://github.com/arobaseSuulei/classnotes-ai",
-            description:"ClassNotes Ai is an ai app for helping to take notes efficiently in class"
         },
 
         {
