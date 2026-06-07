@@ -6,12 +6,12 @@ import {Theme} from "@radix-ui/themes";
 
 export default function App() {
     useEffect(() => {
-        document.title = "Thierno - Portfolio";
+        document.title = "Souley - Portfolio";
     }, []);
 
     return (
 
-            <div className={'text-white px-4 py-4'}>
+            <div className={'text-white'}>
 
                 <Router>
                     <Routes>

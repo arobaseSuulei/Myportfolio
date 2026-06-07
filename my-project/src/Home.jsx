@@ -21,7 +21,7 @@ export default function Home() {
     return (
         <Theme appearance={"dark"}>
             <Navbar />
-            <div className={" min-h-screen"}>
+            <div className={"min-h-screen max-w-5xl mx-auto px-6 sm:px-12 lg:px-16 flex flex-col gap-20 sm:gap-28 py-12"}>
 
                 <ScrollRevealItem delay={0.2}>
                     <div>

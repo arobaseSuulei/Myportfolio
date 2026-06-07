@@ -8,60 +8,46 @@ import {Avatar, Badge, Box,Text, Card, Em, Flex} from "@radix-ui/themes";
 
 export default function Header() {
     return(
-        <div className={'sm:px-52 flex flex-col gap-8 mt-36 sm:mt-40'}>
+        <div className={'relative flex flex-col gap-8 mt-28 sm:mt-36'}>
+            {/* Ambient background glow */}
+            <div className="absolute -top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div className="absolute -top-10 right-20 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
-            <div>
-
+            {/* Availability Badge */}
+            <div className="flex items-center gap-2 self-start px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-xs text-gray-300 font-medium">
                 
+                open source and local AI
+            </div>
 
-
-                <h1 className={'  sm:text-2xl '}>
-                   Hey <a className={''}>Thierno</a> here, @ cs student, I love robots and AI, passionate about RL and exploring the beautiful world of <b>Physical Intelligence</b> 
+            <div className="flex flex-col gap-6">
+                <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white leading-tight">
+                    Hey, I am <span className="bg-gradient-to-r from-white via-[#FFFFF0] to-yellow-400 bg-clip-text text-transparent">Souley</span>
                 </h1>
-
-
-
-
+                
+                <p className="text-lg sm:text-2xl text-gray-300 font-normal leading-relaxed max-w-3xl">
+                    passionate about <strong>robotique</strong> and <strong>Artificial Intelligence</strong>. 
+                    I am building the future with AI with open source and local AI
+                </p>
             </div>
 
-            <div className={'flex items-center  gap-4 '}>
-                <div
-                    className={'flex items-center   gap-4  '}>
+            <div className="flex items-center gap-4 mt-2">
+                <a href="mailto:slimanediallo2105@gmail.com"
+                   className="group relative flex items-center justify-center gap-2 bg-white text-black font-semibold text-sm rounded-full py-3.5 px-6 shadow-lg shadow-white/10 hover:shadow-white/20 transition-all duration-300 hover:scale-105 active:scale-95">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
+                         stroke="currentColor" className="w-4 h-4 transition-transform group-hover:translate-x-0.5">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+                    </svg>
+                    <span>Send an email</span>
+                </a>
 
-
-                    <a href={'mailto:slimanediallo2105@gmail.com'}
-                       className={'shadow-[0_0_15px_rgba(255,255,255)] flex items-center w-36 text-xs bg-white text-black gap-1 border rounded-full p-4'}>
-
-
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" className="size-4">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
-                        </svg>
-
-                        <p className={'font-semibold '}> Send an email</p>
-
-
-
-
-                    </a>
-
-
-                    <a target={'_blank'}
-                       href={'https://drive.google.com/file/d/19Pyj8BpEHtjhVSE-1aH2jKxUOq0sxwQm/view?usp=sharing'}
-                       className={'flex items-center gap-2 border rounded-full w-24 text-xs hover:bg-white hover:text-black hover:shadow-[0_0_15px_rgba(255,255,255)] transition ease-out p-4 px-6'}>
-                        <p>
-                            CV
-                        </p>
-
-
-                    </a>
-
-
-                </div>
+                <a target="_blank"
+                   rel="noopener noreferrer"
+                   href="https://drive.google.com/file/d/19Pyj8BpEHtjhVSE-1aH2jKxUOq0sxwQm/view?usp=sharing"
+                   className="flex items-center justify-center gap-2 border border-white/20 text-white font-semibold text-sm rounded-full py-3.5 px-6 hover:bg-white/5 transition-all duration-300 hover:scale-105 active:scale-95">
+                    <span>CV</span>
+                </a>
             </div>
-
-
         </div>
     );
 }

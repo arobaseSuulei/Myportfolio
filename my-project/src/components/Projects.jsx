@@ -84,10 +84,8 @@ export default function Projects() {
     ];
 
 
-
-
     return(
-        <div className={'flex flex-col  sm:p-4 gap-8'}>
+        <div className={'flex flex-col gap-16 md:gap-24'}>
 
             <h1 className={'font-semibold flex items-center justify-center text-sm'}>
                 <p className={'font-semibold text-xl sm:text-2xl text-white p-2 rounded-lg'}>Highlighted
@@ -95,52 +93,42 @@ export default function Projects() {
             </h1>
 
             {project.map((item, index) => (
-                <div>
+                <div key={item.id}>
 
 
                     <ScrollRevealItem>
-                        <div className={'grid grid-cols-1 sm:grid-cols-2  gap-2'}>
+                        <div className={'grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center'}>
 
 
-                            <div className={'border-[0.2px] border-gray-300 rounded-lg max-w-full min-w-0  p-4 '}>
+                            <div className={'border-[0.2px] border-white/10 bg-[#1c1c1c]/30 backdrop-blur-sm rounded-2xl max-w-full min-w-0 p-4 sm:p-6'}>
 
                                 {/*info*/}
 
-                                <nav className={'flex flex-col py-12 px-2'}>
+                                <nav className={'flex flex-col py-4 px-2'}>
 
-                                    <p className={'flex flex-col sm:py-6 sm:px-2 px-2 py-2 gap-2'}>
-                                        <a className={'flex items-center gap-1 sm:text-2xl font-semibold'}>
-
-
-                                            <p className={'flex w-full justify-between items-center'}>
+                                    <p className={'flex flex-col sm:py-4 px-2 py-2 gap-2'}>
+                                        <span className={'flex w-full justify-between items-center'}>
 
 
-                                                <h1 className={'flex items-center gap-2 sm:gap-2'}>
-                                                    <a className={'font-semibold text-lg sm:text-2xl'}>{item.name}</a>
-                                                    <p className={'text-xs border rounded-full px-4 py-1'}>
-                                                        <a>{item.pin}</a>
-                                                    </p>
+                                            <h1 className={'flex items-center gap-2'}>
+                                                <a className={'font-semibold text-lg sm:text-2xl'}>{item.name}</a>
+                                                <span className={'text-xs border border-white/20 rounded-full px-4 py-1'}>
+                                                    {item.pin}
+                                                </span>
 
 
-                                                </h1>
-                                                <a target={'_blank'} href={item.url}>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                         viewBox="0 0 24 24"
-                                                         stroke-width="1.5" stroke="currentColor"
-                                                         className="sm:size-12 size-8 rounded-full p-2">
-                                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                                              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
-                                                    </svg>
-                                                </a>
-                                            </p>
-                                        </a>
+                                            </h1>
+                                            <a target={'_blank'} href={item.url}>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                     viewBox="0 0 24 24"
+                                                     strokeWidth="1.5" stroke="currentColor"
+                                                     className="sm:size-12 size-8 rounded-full p-2 bg-white/5 hover:bg-white/10 transition">
+                                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/>
+                                                </svg>
+                                            </a>
+                                        </span>
 
-
-                                    </p>
-
-
-                                    <p className="sm:hidden">
-                                        {item.description}
 
                                     </p>
 
@@ -151,7 +139,7 @@ export default function Projects() {
 
 
                                     {item.image ?
-                                        <img className={"rounded-lg"} src={item.imageUrl}/>
+                                        <img className={"rounded-lg w-full"} src={item.imageUrl}/>
                                         : <video
                                             className={" object-cover aspect-video rounded-lg shadow-lg w-full"}
                                             autoPlay
@@ -164,26 +152,44 @@ export default function Projects() {
 
                                 </a>
 
+                                {/* Description and buttons visible on mobile only */}
+                                <div className="md:hidden mt-6 flex flex-col gap-4">
+                                    <p className="text-gray-300 text-sm leading-relaxed">
+                                        {item.description}
+                                    </p>
+                                    <div className="flex gap-3 text-xs font-semibold">
+                                        <a href={item.github} target="_blank" className="flex gap-2 items-center rounded-full px-4 py-2 bg-white text-black transition hover:bg-white/90">
+                                            <span>Read more</span>
+                                            <img className="w-3.5 h-3.5" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub"/>
+                                        </a>
+                                        <a href={item.url} target="_blank" className="flex gap-2 items-center rounded-full border border-white/20 px-4 py-2 text-white transition hover:bg-white/10">
+                                            <span>Link URL</span>
+                                        </a>
+                                    </div>
+                                </div>
+
 
                             </div>
 
-                            <div className="hidden px-12 sm:flex flex-col gap-12 items-center justify-center">
-                               {item.description}
+                            <div className="hidden md:flex flex-col gap-8 items-start justify-center text-left">
+                               <p className="text-gray-300 leading-relaxed text-base">
+                                   {item.description}
+                               </p>
 
                                <span className="flex gap-4">
-                                    <a href={item.github} target="_blank" className="flex gap-2 items-center rounded-full  px-3 py-1 bg-white text-black">
+                                    <a href={item.github} target="_blank" className="flex gap-2 items-center rounded-full px-4 py-2 bg-white text-black transition hover:bg-white/90 font-semibold text-sm">
                                         <p>Read more</p>
                                         <img className="w-4 h-4" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"/>
                                     </a>
 
-                                    <a href={item.url} target="_blank" className="flex gap-2 items-center rounded-full border px-3 py-1  ">
+                                    <a href={item.url} target="_blank" className="flex gap-2 items-center rounded-full border border-white/20 px-4 py-2 text-sm font-semibold hover:bg-white/10 transition">
                                         <p>Link URL</p>
 
                                     </a>
-                                    
-                    
+
+
                                </span>
-                        
+
                             </div>
 
 
@@ -191,8 +197,6 @@ export default function Projects() {
                     </ScrollRevealItem>
                 </div>
             ))}
-
-
         </div>
     );
 }
