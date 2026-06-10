@@ -21,8 +21,7 @@ export default function About() {
 
 
             <div className="flex flex-col sm:px-72  sm:col-span-3">
-                <p>I am currently a Software Development Engineer at Amazon, working in the AWS sector under team Route 53.
-                    At the same time, I am undertaking a part-time Master's of Science in Software Engineering at University of Oxford.</p>
+                <p></p>
             </div>
 
         </div>

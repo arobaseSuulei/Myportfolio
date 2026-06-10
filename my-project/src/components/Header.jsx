@@ -10,8 +10,7 @@ export default function Header() {
     return(
         <div className={'relative flex flex-col gap-8 mt-28 sm:mt-36'}>
             {/* Ambient background glow */}
-            <div className="absolute -top-20 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
-            <div className="absolute -top-10 right-20 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            
 
             {/* Availability Badge */}
             <div className="flex items-center gap-2 self-start px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-xs text-gray-300 font-medium">
@@ -21,11 +20,11 @@ export default function Header() {
 
             <div className="flex flex-col gap-6">
                 <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white leading-tight">
-                    Hey, I am <span className="bg-gradient-to-r from-white via-[#FFFFF0] to-yellow-400 bg-clip-text text-transparent">Souley</span>
+                    Hey, I am Souleymane
                 </h1>
                 
                 <p className="text-lg sm:text-2xl text-gray-300 font-normal leading-relaxed max-w-3xl">
-                    passionate about <strong>robotique</strong> and <strong>Artificial Intelligence</strong>. 
+                    passionate about <strong>AI</strong> and <strong>Local Models</strong>. 
                     I am building the future with AI with open source and local AI
                 </p>
             </div>
