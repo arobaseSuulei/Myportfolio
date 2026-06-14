@@ -20,12 +20,12 @@ export default function Header() {
 
             <div className="flex flex-col gap-6">
                 <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white leading-tight">
-                    Hey, I am Souleymane
+                    Hey, I am <a class='text-[#E8A44A]'>Souleymane</a>
                 </h1>
                 
                 <p className="text-lg sm:text-2xl text-gray-300 font-normal leading-relaxed max-w-3xl">
                     passionate about <strong>AI</strong> and <strong>Local Models</strong>. 
-                    I am building the future with AI with open source and local AI
+                    I am building the future of AI w/ open source and local AI
                 </p>
             </div>
 
