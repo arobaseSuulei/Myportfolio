@@ -19,7 +19,7 @@ import Academic from "./components/Academic.jsx";
 
 export default function Home() {
     return (
-        <Theme appearance={"dark"}>
+        <Theme appearance={"dark"} style={{ backgroundColor: "#1C1B19" }}>
             <Navbar />
             <div className={"min-h-screen max-w-5xl mx-auto px-6 sm:px-12 lg:px-16 flex flex-col gap-20 sm:gap-28 py-12"}>
 

@@ -69,7 +69,7 @@ export default function Skills() {
     ];
     return(
         <div className={'flex flex-col items-center justify-center gap-6'}>
-            <h1 id={"work"} className={'font-semibold text-xl'}>work stack</h1>
+            <h1 id={"work"} className={'font-semibold text-xl text-[#EFECE7]'}>work stack</h1>
 
 
             <div className={'grid grid-cols-2 sm:grid-cols-4 gap-4'}>
@@ -79,7 +79,7 @@ export default function Skills() {
 
 
                     {stack.map((item,index) => (
-                        <div className={"flex  gap-2 items-center py-4 px-5 border-[0.2px] border-gray-500 text-sm font-semibold p-2 rounded-full"} key={item.id}>
+                        <div className={"flex  gap-2 items-center py-4 px-5 border-[0.2px] border-[#E8A44A]/40 text-sm font-semibold p-2 rounded-full"} key={item.id}>
                             <a>
                                 <img src={item.url} className={'w-8'}/>
                             </a>

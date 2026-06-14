@@ -13,7 +13,7 @@ export default function Header() {
             
 
             {/* Availability Badge */}
-            <div className="flex items-center gap-2 self-start px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-xs text-gray-300 font-medium">
+            <div className="flex items-center gap-2 self-start px-3 py-1 rounded-full border border-[#E8A44A]/40 bg-[#E8A44A]/5 backdrop-blur-sm text-xs text-[#EFECE7] font-medium">
                 
                 open source and local AI
             </div>
@@ -31,7 +31,7 @@ export default function Header() {
 
             <div className="flex items-center gap-4 mt-2">
                 <a href="mailto:slimanediallo2105@gmail.com"
-                   className="group relative flex items-center justify-center gap-2 bg-white text-black font-semibold text-sm rounded-full py-3.5 px-6 shadow-lg shadow-white/10 hover:shadow-white/20 transition-all duration-300 hover:scale-105 active:scale-95">
+                    className="group relative flex items-center justify-center gap-2 bg-[#E8A44A] text-black font-semibold text-sm rounded-full py-3.5 px-6 shadow-lg shadow-[#E8A44A]/20 hover:shadow-[#E8A44A]/30 transition-all duration-300 hover:scale-105 active:scale-95">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
                          stroke="currentColor" className="w-4 h-4 transition-transform group-hover:translate-x-0.5">
                         <path strokeLinecap="round" strokeLinejoin="round"
@@ -43,7 +43,7 @@ export default function Header() {
                 <a target="_blank"
                    rel="noopener noreferrer"
                    href="https://drive.google.com/file/d/19Pyj8BpEHtjhVSE-1aH2jKxUOq0sxwQm/view?usp=sharing"
-                   className="flex items-center justify-center gap-2 border border-white/20 text-white font-semibold text-sm rounded-full py-3.5 px-6 hover:bg-white/5 transition-all duration-300 hover:scale-105 active:scale-95">
+                   className="flex items-center justify-center gap-2 border border-[#E8A44A] text-[#E8A44A] font-semibold text-sm rounded-full py-3.5 px-6 hover:bg-[#E8A44A]/10 transition-all duration-300 hover:scale-105 active:scale-95">
                     <span>CV</span>
                 </a>
             </div>

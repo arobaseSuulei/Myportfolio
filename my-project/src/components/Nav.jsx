@@ -9,7 +9,7 @@ export default function Nav() {
         <div className={' mt-20 flex flex-col gap-6'}>
 
             <h1 className={'font-semibold flex items-center justify-center text-sm'}>
-                <p className={'bg-white text-black p-2 rounded-lg'}>Mes réseaux sociaux</p>
+                <p className={'bg-[#E8A44A] text-black p-2 rounded-lg font-semibold'}>Mes réseaux sociaux</p>
             </h1>
 
             <nav className={'flex items-center justify-center text-xs gap-2 '}>

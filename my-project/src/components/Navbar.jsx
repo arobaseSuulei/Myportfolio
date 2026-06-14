@@ -3,14 +3,14 @@ import Header from "./Header.jsx";
 import {Text} from "@radix-ui/themes";
 export default function Navbar() {
     return (
-        <div className={'fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#121212]/40 border-b border-white/5'}>
+        <div className={'fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-[#1C1B19]/40 border-b border-white/5'}>
             <div className={'max-w-5xl mx-auto px-6 sm:px-12 lg:px-16 py-3 flex justify-between items-center w-full'}>
                 <div className="flex text-4xl flex-col w-16 h-16 px-2">
                 </div>
 
                 <div className={'fixed sm:static bottom-0 sm:top-0 right-0 mx-4 my-4 rounded-full backdrop-blur-md'}>
                     <div
-                        className={'flex items-center rounded-full py-3 px-8 gap-2 border-[0.2px] border-gray-500 bg-[#121212]/80 sm:bg-transparent'}>
+                        className={'flex items-center rounded-full py-3 px-8 gap-2 border-[0.2px] border-[#E8A44A]/40 bg-[#1C1B19]/80 sm:bg-transparent'}>
                         <a className={"rounded-lg p-2 text-sm transition ease-in-out duration-500 "}
                            href={"#work"}>Work
                         </a>
